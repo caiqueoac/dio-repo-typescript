@@ -45,3 +45,5 @@ let pessoa5 = {
   nome : 'carlos',
   idade : 19,
 }
+
+console.log(pessoa5.idade);
