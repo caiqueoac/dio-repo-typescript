@@ -1,23 +1,47 @@
 // Como podemos melhorar o esse código usando TS? 
 
-let pessoa1 = {};
-pessoa1.nome = "maria";
-pessoa1.idade = 29;
-pessoa1.profissao = "atriz"
+enum Profissao {
+    Vendedor,
+    Palestrante,
+    Professor,
+    AssistenteAdministrativo,
+    Padeiro,
+    Atriz
+}
 
-let pessoa2 = {}
-pessoa2.nome = "roberto";
-pessoa2.idade = 19;
-pessoa2.profissao = "Padeiro";
+type Pessoa = {
+    nome: string,
+    idade: number,
+    profissao?: Profissao
+}
+
+let pessoa1 = {
+  nome : 'maria',
+  idade : 29,
+  profissao: Profissao.Atriz
+};
+
+
+let pessoa2 = {
+  nome : 'roberto',
+  idade : 19,
+  profissao: Profissao.Padeiro,
+}
+
 
 let pessoa3 = {
-    nome: "laura",
-    idade: "32",
-    profissao: "Atriz"
+    nome: 'laura',
+    idade: '32',
+    profissao: Profissao.Atriz
 };
 
 let pessoa4 = {
-    nome = "carlos",
-    idade = 19,
-    profissao = "padeiro"
+    nome : 'carlos',
+    idade : 19,
+    profissao: Profissao.Padeiro
+}
+
+let pessoa5 = {
+  nome : 'carlos',
+  idade : 19,
 }
